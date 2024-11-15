@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sample-05</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
-<body class="font-sans bg-[#fafafa]">
+<body class="font-sans bg-[#fafafa]  overflow-x-hidden">
     <!-- start header -->
     <header>
-        <section class="mx-auto lg:w-full xl:w-3/4 px-10 py-5 text-center flex justify-between">
+        <section class="mx-auto  lg:w-full xl:w-3/4 px-10 py-5 text-center flex justify-between">
             <div class="logo lg:w-1/4"><a href="https://themewagon.github.io/pinwheel/" target="_blank"><img
                         src="./images/logo.svg" alt="logo"></a></div>
             <nav class="hidden lg:flex lg:w-1/2 z-10">
@@ -34,14 +35,33 @@
                     href="#">تماس</a>
             </nav>
             <button
-                class=" z-10 hidden lg:inline lg:w-1/12 rounded-3xl py-2 px-3 bg-white shadow-xl hover:shadow-none transition-all">ثبت
+                class="z-10 hidden lg:inline lg:w-1/12 rounded-3xl py-2 px-3 bg-white shadow-xl hover:shadow-none transition-all">ثبت
                 نام</button>
             <img class="top-0 z-0 absolute left-0 -scale-x-100 w-48 h-48 lg:w-96 lg:h-96"
                 src="./images/banner-shape.svg" alt="">
             <div class="z-10 lg:hidden w-20 h-20">
                 <a href="#">
-                    <i class="text-gray-700 fa-solid fa-bars text-3xl "></i>
+                    <i id="menu-icon" class="text-gray-700 fa-solid fa-bars text-3xl "></i>
                 </a>
+            </div>
+            <div id="mobile-menu"
+                class="z-20  rounded-2xl transition-all duration-200 lg:hidden absolute -left-[1500px] top-20 py-10 bg-white w-full ">
+                <nav>
+                    <ul class="flex z-20 flex-col justify-items-center items-center">
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a class="border-b border-b-orange-500"
+                                href="#">خانه</a>
+                        </li>
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a href="#">درباره ما</a></li>
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a href="#">بلاگ</a></li>
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a href="#">ویژگی‌ها</a></li>
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a href="#">نحوه کارکرد</a></li>
+                        <li class="mb-8 hover:text-orange-500 transition-all"><a href="#">صفحات</a></li>
+                        <li><a href="#">تماس</a></li>
+                        <button
+                            class=" z-10 hidden lg:inline lg:w-1/12 rounded-3xl py-2 px-3 bg-white shadow-xl hover:shadow-none transition-all">ثبت
+                            نام</button>
+                    </ul>
+                </nav>
             </div>
         </section>
 
@@ -401,8 +421,9 @@
             <div class="footer-right lg:w-1/5 mb-10">
                 <h6 class="text-[#222222] mb-5">مکان و تماس</h6>
                 <div class="text-[#888888] text-sm">2118 Thornridge Cir. سیراکیوز، کانکتیکات 35624
-
-                    (704) 555-0127</div>
+                    <br>
+                    (704) 555-0127
+                </div>
             </div>
         </section>
     </footer>
@@ -410,6 +431,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/sample-05.js"></script>
 </body>
 
 </html>
